@@ -1,16 +1,30 @@
-import React from 'react'
+"use client"
 
-const MagicButton = ({ title, icon, position, handleClick, otherClasses } : {
-    title: string; icon: React.ReactNode, position: string; handleClick?: () => void; otherClasses?: string;
-}) => {
+import type React from "react"
+import { motion } from "framer-motion"
+
+interface MagicButtonProps {
+  title: string
+  icon?: React.ReactNode
+  position?: "left" | "right"
+}
+
+const MagicButton = ({ title, icon, position = "left" }: MagicButtonProps) => {
   return (
-    <button className="p-[3px] relative focus:outline-none md:w-60 !md:mt-4 !mt-4" onClick={handleClick}>
-      <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg" />
-      <div className={`px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent ${otherClasses}`}>
-        {title}
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-black rounded-lg group bg-amber-500 border-2 border-black"
+    >
+      <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-10"></span>
+      <div className="flex items-center gap-2">
+        {position === "left" && icon}
+        <span>{title}</span>
+        {position === "right" && icon}
       </div>
-    </button>
+    </motion.button>
   )
 }
 
 export default MagicButton
+
