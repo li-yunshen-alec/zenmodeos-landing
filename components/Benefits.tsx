@@ -1,4 +1,6 @@
 import React from 'react';
+import BrowserWithTooManyTabs from './ui/BrowserWithTooManyTabs';
+import AddictiveVideoApp from './ui/AddictiveVideoApp';
 
 const Benefits = () => {
   return (
@@ -10,7 +12,7 @@ const Benefits = () => {
                 <p className="mb-6 font-light text-gray-900 lg:mb-8 md:text-lg lg:text-xl max-w-lg">Web browsers make money when you browse aimlessly. The more rabbit holes you fall into, the more searches you make, the more money they earn.</p>
             </div>
             <div className="lg:mt-0 flex-shrink-0">
-                <img src="benefits1.jpg" alt="mockup" className="h-[60vh] rounded-xl border-black border-2" />
+                <BrowserWithTooManyTabs />
             </div>                
         </div>
       </section>
@@ -18,7 +20,7 @@ const Benefits = () => {
       <section className="">
         <div className="max-w-6xl px-4 py-8 mx-auto lg:gap-8 xl:gap-40 lg:py-16 flex flex-row justify-between">
             <div className="lg:mt-0 flex-shrink-0 mr-auto">
-                <img src="benefits1.jpg" alt="mockup" className="h-[60vh] rounded-xl border-black border-2" />
+                <AddictiveVideoApp />
             </div>                
 
             <div className="place-self-center">
