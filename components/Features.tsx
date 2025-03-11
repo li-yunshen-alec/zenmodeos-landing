@@ -11,13 +11,18 @@ const features = [
   },
   {
     title: "Block the bad and keep the good.",
-    description: "Shut out distracting desktop apps and websites and keep only what matters.",
-    image: "/siteblocked.png", // side-by-side of blocked yt and unblocked yt 
+    description: "AI helps you shut out distracting sites and keep only what matters.",
+    image: "/features1.png", // side-by-side of blocked yt and unblocked yt 
+  },
+  {
+    title: "fine-tune your web feed.",
+    description: "Leverage native content filters to take granular control over what you see.",
+    image: "/features3.png", // one sc of app agaisnt desktop background
   },
   {
     title: "Schedule focus sessions.",
-    description: "Lock in your productivity by scheduling distraction-proof work periods.",
-    image: "/scheduleblock.png", // one sc of app agaisnt desktop background
+    description: "Lock in your productivity on command with distraction-proof work periods.",
+    image: "/features2.png", // one sc of app agaisnt desktop background
   },
   {
     title: "Activate visual detox mode.",
