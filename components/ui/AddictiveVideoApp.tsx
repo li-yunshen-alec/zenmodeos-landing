@@ -49,7 +49,7 @@ export default function AddictiveVideoApp() {
           <div className="bg-amber-50 border-b border-amber-200 p-2 text-xs text-amber-800 flex justify-between items-center">
             <div className="flex items-center">
               <FaClock className="w-3 h-3 mr-1" />
-              <span>You've watched 5.5 hours today</span>
+              <span>You&apos;ve watched 5.5 hours today</span>
             </div>
             <button className="text-amber-500 font-medium">Dismiss</button>
           </div>
@@ -137,7 +137,7 @@ export default function AddictiveVideoApp() {
             {/* "Keep watching" prompt with enhanced border */}
             <div className="bg-amber-50 border-2 border-amber-300 rounded-lg mx-3 p-3 mb-4 shadow-sm">
               <div className="text-sm font-medium mb-1">Keep the videos coming!</div>
-              <div className="text-xs text-gray-600 mb-2">We've picked more videos we think you'll love</div>
+              <div className="text-xs text-gray-600 mb-2">We&apos;ve picked more videos we think you&apos;ll love</div>
               <button className="w-full bg-amber-500 text-white rounded-full py-2 text-sm font-medium border border-amber-600">
                 Watch 5 more minutes
               </button>
