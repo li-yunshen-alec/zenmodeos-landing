@@ -6,10 +6,10 @@ import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <main className="relative bg-stone-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
+    <main className="relative bg-stone-100 mx-auto">
       <Navbar />
-      <div className="max-w-7xl w-full">
-        <Hero />
+      <Hero />
+      <div className="max-w-7xl w-full mx-auto">
         <Benefits />
         <Features />
         <DownloadBeta />

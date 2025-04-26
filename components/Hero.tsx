@@ -1,172 +1,157 @@
 "use client"
 import Image from "next/image"
-import { Spotlight } from "./ui/Spotlight"
-import { TextGenerateEffect } from "./ui/TextGenerateEffect"
+import { Clock, Focus, Brain } from "lucide-react"
+import { motion } from "framer-motion"
 import MagicButton from "./ui/MagicButton"
 import { FaLocationArrow } from "react-icons/fa6"
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <>
-      <div className="h-screen pb-20 pt-36 overflow-hidden">
-        <div className="h-screen w-full bg-stone-100 flex items-center justify-center absolute top-0 left-0">
-          {/* Left collage - Distractions */}
-          <div className="hidden md:block absolute left-0 h-full w-1/3 pointer-events-none">
-            <div className="relative h-full w-full left-28">
-              {/* Distraction images with converging effect */}
-              <div className="absolute top-[20%] left-[10%] w-[180px] h-[236px] rotate-[-8deg] shadow-lg rounded-xl overflow-hidden transform transition-all duration-500 hover:scale-105 z-10 border-black border-2">
-                <Image
-                  src="/image1.jpg"
-                  alt="Social media scrolling"
-                  width={180}
-                  height={236}
-                  className="object-cover"
-                />
-              </div>
-              <div className="absolute top-[35%] left-[30%] w-[160px] h-[160px] rotate-[5deg] shadow-lg rounded-xl overflow-hidden transform transition-all duration-500 hover:scale-105 z-20 border-black border-2">
-                <Image
-                  src="/image2.jpg"
-                  alt="Video streaming app"
-                  width={160}
-                  height={160}
-                  className="object-cover"
-                />
-              </div>
-              <div className="hidden absolute top-[45%] left-[15%] w-[160px] h-[240px] rotate-[-5deg] shadow-lg rounded-xl overflow-hidden transform transition-all duration-500 hover:scale-105 z-30">
-                <Image
-                  src="/image3.jpg"
-                  alt="Gaming distraction"
-                  width={160}
-                  height={240}
-                  className="object-cover"
-                />
-              </div>
-              <div className="absolute top-[55%] left-[20%] w-[140px] h-[140px] rotate-[-5deg] shadow-lg rounded-xl overflow-hidden transform transition-all duration-500 hover:scale-105 z-40 border-black border-2">
-                <Image
-                  src="/image4.jpg"
-                  alt="Endless notifications"
-                  width={140}
-                  height={140}
-                  className="object-cover"
-                />
-              </div>
+    <section className="relative overflow-hidden bg-stone-100 w-full">
+      <div className="container px-4 py-16 md:py-24 lg:py-32 mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left content */}
+          <div className="space-y-8 lg:ml-32">
+            <div className="space-y-4">
+              <h1 className="font-bold text-black leading-tight text-[40px] md:text-6xl lg:text-8xl tracking-tighter">
+                Fuck p*rn.
+              </h1>
+
+              <p className="text-center md:text-left text-sm md:text-lg lg:text-2xl max-w-md text-black">
+                Clear is the only app that blocks that shit for real.
+              </p>
+            </div>
+
+            <div className="flex justify-center md:justify-start">
+              <MagicButton title="Download for free" icon={<FaLocationArrow />} position="right" />
             </div>
           </div>
 
-          {/* Mobile collage (visible only on mobile) */}
-          <div className="md:hidden absolute top-20 w-full flex justify-center pointer-events-none">
-            <div className="relative h-[200px] w-full max-w-[320px]">
-              <div className="absolute top-0 left-[5%] w-[100px] h-[100px] rotate-[-8deg] shadow-lg rounded-xl overflow-hidden z-10">
-                <Image
-                  src="/image1.jpg"
-                  alt="Social media scrolling"
-                  width={100}
-                  height={100}
-                  className="object-cover"
-                />
+          {/* Right content - App screenshot with color highlights that always stay behind the edges */}
+          <div className="relative flex justify-center">
+            {/* Container for image and highlights with relative positioning */}
+            <div className="relative w-full max-w-[320px] flex items-center justify-center">
+              {/* Color highlights positioned absolutely within the container */}
+              <div className="absolute w-[140%] h-[140%] pointer-events-none">
+                <div className="absolute top-[5%] left-[5%] w-[30%] h-[30%] bg-yellow-300 rounded-full opacity-70 blur-xl"></div>
+                <div className="absolute bottom-[5%] right-[5%] w-[35%] h-[35%] bg-blue-300 rounded-full opacity-70 blur-xl"></div>
+                <div className="absolute top-[40%] right-[0%] w-[25%] h-[25%] bg-green-300 rounded-full opacity-50 blur-xl"></div>
+                <div className="absolute bottom-[30%] left-[10%] w-[20%] h-[20%] bg-purple-300 rounded-full opacity-40 blur-xl"></div>
               </div>
-              <div className="absolute top-[20px] right-[5%] w-[100px] h-[100px] rotate-[8deg] shadow-lg rounded-xl overflow-hidden z-20">
+
+              {/* The image positioned on top of the highlights */}
+              <div className="relative z-10 w-full shadow-xl">
                 <Image
-                  src="/benefits1.jpg"
-                  alt="Productivity app"
-                  width={100}
-                  height={100}
-                  className="object-cover"
-                />
-              </div>
-              <div className="absolute bottom-0 left-[25%] w-[90px] h-[90px] rotate-[-5deg] shadow-lg rounded-xl overflow-hidden z-30">
-                <Image
-                  src="/image5.jpg"
-                  alt="Video streaming"
-                  width={90}
-                  height={90}
-                  className="object-cover"
-                />
-              </div>
-              <div className="absolute bottom-[10px] right-[25%] w-[90px] h-[90px] rotate-[5deg] shadow-lg rounded-xl overflow-hidden z-40">
-                <Image
-                  src="/benefits1.jpg"
-                  alt="Focus timer"
-                  width={90}
-                  height={90}
-                  className="object-cover"
+                  src="/image.png"
+                  alt="Clear app blocking 10,000,000+ porn sites"
+                  width={400}
+                  height={800}
+                  className="object-contain w-full"
                 />
               </div>
             </div>
-          </div>
 
-          {/* Main content */}
-          <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[40vw] flex flex-col items-center justify-center mt-[100px] md:mt-0 z-40">
-            <div className="font-bold my-6 text-black leading-tight lowercase text-center text-[40px] md:text-6xl lg:text-8xl tracking-tighter max-w-4xl">
-              make the web <br /> 
-              <span className="text-amber-500">fun again.</span>
-            </div>
+            {/* Stats floating around */}
+            <motion.div
+              className="absolute top-10 -right-4 bg-white p-3 rounded-xl shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+            >
+              <p className="text-sm font-bold">56%</p>
+              <p className="text-xs text-gray-600">Reduced anxiety</p>
+            </motion.div>
 
-            <p className="text-center mb-4 text-sm md:text-lg lg:text-2xl max-w-md text-black-100">
-              Control 100% of what you see and watch, with Clear.
-            </p>
-
-            <a href="#about" className="scale-110 mt-4">
-              <MagicButton title="Download for free" icon={<FaLocationArrow />} position="right"/>
-            </a>
-          </div>
-
-          {/* Right collage - Productivity */}
-          <div className="hidden md:block absolute right-0 h-full w-1/3 pointer-events-none">
-            <div className="relative h-full w-full right-28">
-              {/* Productivity images */}
-              <div className="absolute top-[20%] right-[15%] w-[180px] h-[236px] rotate-[8deg] shadow-lg rounded-xl overflow-hidden transform transition-all duration-500 hover:scale-105 z-10 border-black border-2">
-                <Image
-                  src="/heroproductivity.png"
-                  alt="Note-taking app"
-                  width={180}
-                  height={236}
-                  className="object-cover"
-                />
-              </div>
-              <div className="absolute top-[30%] right-[30%] w-[160px] h-[160px] rotate-[-5deg] shadow-lg rounded-xl overflow-hidden transform transition-all duration-500 hover:scale-105 z-20 border-black border-2">
-                <Image
-                  src="/benefits1.jpg"
-                  alt="Calendar and planning"
-                  width={160}
-                  height={160}
-                  className="object-cover"
-                />
-              </div>
-              <div className="absolute top-[50%] right-[10%] w-[200px] h-[150px] rotate-[3deg] shadow-lg rounded-xl overflow-hidden transform transition-all duration-500 hover:scale-105 z-30 border-black border-2">
-                <Image
-                  src="/heroproductivity2.png"
-                  alt="Focus timer"
-                  width={200}
-                  height={150}
-                  className="object-cover"
-                />
-              </div>
-              <div className="hidden absolute top-[65%] right-[25%] w-[140px] h-[180px] rotate-[-7deg] shadow-lg rounded-xl overflow-hidden transform transition-all duration-500 hover:scale-105 z-40">
-                <Image
-                  src="/heroproductivity.png"
-                  alt="Productive workspace"
-                  width={140}
-                  height={180}
-                  className="object-cover"
-                />
-              </div>
-            </div>
+            <motion.div
+              className="absolute bottom-10 -left-4 bg-white p-3 rounded-xl shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 }}
+            >
+              <p className="text-sm font-bold">30+ days</p>
+              <p className="text-xs text-gray-600">Avg. streak</p>
+            </motion.div>
           </div>
         </div>
       </div>
 
-      <div className="-mt-60 w-full aspect-[16/9] rounded-xl overflow-hidden border-2 border-black shadow-lg transform transition-all duration-300 hover:scale-[1.02]">
-        <Image 
-          src={"/zenmodehero.jpg"} 
-          alt={"zenmodehero.jpg"} 
-          fill 
-          className="object-cover" 
-        />
+      {/* Social Proof Bar */}
+      <div className="w-full bg-stone-50 py-6 border-t border-b border-stone-200">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+            <div className="flex flex-col items-center justify-center text-center p-3">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-100 mb-2">
+                <Clock className="h-5 w-5 text-yellow-600" />
+              </div>
+              <p className="font-bold text-lg md:text-xl">1,000+</p>
+              <p className="text-xs md:text-sm text-gray-600">Hours reclaimed</p>
+            </div>
+
+            <div className="flex flex-col items-center justify-center text-center p-3">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 mb-2">
+                <Focus className="h-5 w-5 text-blue-600" />
+              </div>
+              <p className="font-bold text-lg md:text-xl">44%</p>
+              <p className="text-xs md:text-sm text-gray-600">Improved focus</p>
+            </div>
+
+            <div className="flex flex-col items-center justify-center text-center p-3">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-green-100 mb-2">
+                <Brain className="h-5 w-5 text-green-600" />
+              </div>
+              <p className="font-bold text-lg md:text-xl">30+</p>
+              <p className="text-xs md:text-sm text-gray-600">Days avg. streak</p>
+            </div>
+
+            <div className="flex flex-col items-center justify-center text-center p-3">
+              <motion.div
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-purple-100 mb-2"
+                initial={{ scale: 0.8 }}
+                animate={{ scale: [0.8, 1.1, 1] }}
+                transition={{ duration: 0.5, delay: 1 }}
+              >
+                <svg
+                  className="h-5 w-5 text-purple-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M9 9H9.01"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M15 9H15.01"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </motion.div>
+              <p className="font-bold text-lg md:text-xl">56%</p>
+              <p className="text-xs md:text-sm text-gray-600">Reduced anxiety</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+    </section>
   )
 }
-
-export default Hero
-
