@@ -5,8 +5,8 @@ import { motion } from "framer-motion"
 
 const features = [
   {
-    title: "it's time for a browser that works for you, not against you.",
-    description: "Clear empowers you to take complete control over what you see on the Internet.",
+    title: "Clear puts your rational mind in full control.",
+    description: "Restrictions on porn are put in place by your rational mind and enforced by Clear.",
     image: "/siteblocked.png", // side-by-side of blocked yt and unblocked yt 
   },
   {
