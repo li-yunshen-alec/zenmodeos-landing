@@ -30,7 +30,7 @@ const DownloadBeta = () => {
 
             <ul className="list-disc pl-6 mb-6 space-y-2 text-lg">
               <li>Block 10,000,000+ adult sites automatically</li>
-              <li>Set restriction periods that can't be bypassed</li>
+              <li>Set restriction periods that can&apos;t be bypassed</li>
               <li>Fine-tune your web and app access</li>
               <li>Built for privacy—your data stays on your device</li>
             </ul>

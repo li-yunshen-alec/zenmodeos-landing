@@ -19,7 +19,7 @@ export default function TermsOfUse() {
 
             <h2 className="text-xl font-semibold mt-8 mb-4">1. Acceptance of Terms</h2>
             <p>
-              By downloading, installing, or using Clear ("the App"), you agree to be bound by these Terms of Use. If
+              By downloading, installing, or using Clear (&quot;the App&quot;), you agree to be bound by these Terms of Use. If
               you do not agree to these terms, please do not use the App.
             </p>
 
@@ -54,12 +54,12 @@ export default function TermsOfUse() {
             <h2 className="text-xl font-semibold mt-8 mb-4">5. Updates and Changes</h2>
             <p>
               We may from time to time develop patches, bug fixes, updates, upgrades, and other modifications to improve
-              the App ("Updates"). You agree that we may update the App automatically without providing notice to you.
+              the App (&quot;Updates&quot;). You agree that we may update the App automatically without providing notice to you.
             </p>
 
             <h2 className="text-xl font-semibold mt-8 mb-4">6. Disclaimer of Warranties</h2>
             <p>
-              THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+              THE APP IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED,
               INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
               TITLE, AND NON-INFRINGEMENT.
             </p>
@@ -94,7 +94,7 @@ export default function TermsOfUse() {
             <h2 className="text-xl font-semibold mt-8 mb-4">10. Changes to Terms</h2>
             <p>
               We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision
-              is material, we will try to provide at least 30 days' notice prior to any new terms taking effect.
+              is material, we will try to provide at least 30 days&apos; notice prior to any new terms taking effect.
             </p>
             <p>
               By continuing to access or use our App after those revisions become effective, you agree to be bound by

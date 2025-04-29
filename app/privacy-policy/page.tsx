@@ -19,10 +19,10 @@ export default function PrivacyPolicy() {
 
             <h2 className="text-xl font-semibold mt-8 mb-4">Introduction</h2>
             <p>
-              Clear ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how
+              Clear (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how
               your personal information is collected, used, and disclosed by Clear.
             </p>
-            <p>This Privacy Policy applies to our website and our application Clear (together, our "Service").</p>
+            <p>This Privacy Policy applies to our website and our application Clear (together, our &quot;Service&quot;).</p>
             <p>
               By accessing or using our Service, you signify that you have read, understood, and agree to our
               collection, storage, use, and disclosure of your personal information as described in this Privacy Policy.
@@ -68,7 +68,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-xl font-semibold mt-8 mb-4">Changes to This Privacy Policy</h2>
             <p>
               We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
-              Privacy Policy on this page and updating the "Last Updated" date at the top of this Privacy Policy.
+              Privacy Policy on this page and updating the &quot;Last Updated&quot; date at the top of this Privacy Policy.
             </p>
             <p>
               You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy
