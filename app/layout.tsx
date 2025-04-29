@@ -6,8 +6,8 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Alec Li",
-  description: "desc",
+  title: "Clear",
+  description: "The app that helps you take back control and block distractions.",
 };
 
 export default function RootLayout({

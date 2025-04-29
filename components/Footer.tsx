@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
-  const supportEmail = "support@clearapp.io"
+  const supportEmail = "support@clearspace.app"
 
   return (
     <footer className="bg-amber-50 border-t-2 border-black w-full py-8">

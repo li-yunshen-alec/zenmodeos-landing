@@ -110,8 +110,8 @@ export default function TermsOfUse() {
             <h2 className="text-xl font-semibold mt-8 mb-4">12. Contact Us</h2>
             <p>If you have any questions about these Terms, please contact us at:</p>
             <p>
-              <a href="mailto:support@clearapp.io" className="text-amber-600 hover:underline">
-                support@clearapp.io
+              <a href="mailto:support@clearspace.app" className="text-amber-600 hover:underline">
+                support@clearspace.app
               </a>
             </p>
           </div>
