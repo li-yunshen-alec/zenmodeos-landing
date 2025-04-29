@@ -1,0 +1,20 @@
+/* Clean, modern scrollbar styles */
+.clean-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #e11d48 #1f2937; /* thumb color, track color */
+}
+
+.clean-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  background: #1f2937; /* track color */
+  border-radius: 8px;
+}
+
+.clean-scrollbar::-webkit-scrollbar-thumb {
+  background: #e11d48; /* thumb color (Tailwind red-600) */
+  border-radius: 8px;
+}
+
+.clean-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #be123c; /* thumb hover (Tailwind red-700) */
+} 

@@ -7,10 +7,8 @@ import MagicButton from "./ui/MagicButton"
 import { FaDownload, FaBars, FaTimes } from "react-icons/fa"
 
 const navLinks = [
-  { name: "Problems", href: "#problems" },
+  { name: "Problem", href: "#problem" },
   { name: "Features", href: "#features" },
-  { name: "Download", href: "#download" },
-  { name: "Support", href: "#donate" },
 ]
 
 const Navbar = () => {
@@ -51,12 +49,9 @@ const Navbar = () => {
             <div className="flex items-center justify-between h-16">
               {/* Logo and Desktop Nav */}
               <div className="flex items-center">
-                <Link href="/" className="flex-shrink-0">
-                  <div className="relative h-10 w-10 mr-3">
-                    <div className="absolute inset-0 bg-white rounded-full border-2 border-black flex items-center justify-center font-bold text-xl">
-                      C
-                    </div>
-                  </div>
+                <Link href="/" className="flex-shrink-0 flex items-center -mt-1">
+                  <img src="/128x128.png" alt="Logo" className="h-10 w-10 mr-3" />
+                  <span className="text-black font-bold text-xl">Clear</span>
                 </Link>
                 <div className="hidden md:block">
                   <div className="ml-6 flex items-center space-x-4">
@@ -77,7 +72,7 @@ const Navbar = () => {
               {/* Right side - Download button */}
               <div className="hidden md:flex items-center">
                 <Link href="#download">
-                  <MagicButton title="Download Beta" icon={<FaDownload />} position="left" />
+                  <MagicButton title="Download for Windows" icon={<FaDownload />} position="left" />
                 </Link>
               </div>
 

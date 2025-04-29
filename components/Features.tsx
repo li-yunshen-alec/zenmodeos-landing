@@ -7,32 +7,7 @@ const features = [
   {
     title: "Clear puts your rational mind in full control.",
     description: "Restrictions on porn are put in place by your rational mind and enforced by Clear.",
-    image: "/siteblocked.png", // side-by-side of blocked yt and unblocked yt 
-  },
-  {
-    title: "Block the bad and keep the good.",
-    description: "AI helps you shut out distracting sites and keep only what matters.",
-    image: "/features1.png", // side-by-side of blocked yt and unblocked yt 
-  },
-  {
-    title: "fine-tune your web feed.",
-    description: "Leverage native content filters to take granular control over what you see.",
-    image: "/features3.png", // one sc of app agaisnt desktop background
-  },
-  {
-    title: "Schedule focus sessions.",
-    description: "Lock in your productivity on command with distraction-proof work periods.",
-    image: "/features2.png", // one sc of app agaisnt desktop background
-  },
-  {
-    title: "Activate visual detox mode.",
-    description: "Disable images across the web to keep your view clean and your mind clear of visual noise.",
-    image: "/detox.png", // sc of youtube home
-  },
-  {
-    title: "Enjoy an audio-only experience.",
-    description: "Mute videos while preserving crisp, clear audio for an uninterrupted workflow.",
-    image: "/vidblock.png", // sc of youtube vid
+    image: "/Screenshot (547).png", // congrats message 
   },
 ]
 

@@ -12,8 +12,8 @@ const DownloadBeta = () => {
     <section id="download" className="relative pt-20 pb-10 overflow-hidden text-stone-950">
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center lowercase text-4xl md:text-5xl lg:text-6xl tracking-tighter mb-16 font-bold">
-            <TextGenerateEffect words="download the beta" />
+          <h2 className="text-amber-500 text-center lowercase text-4xl md:text-5xl lg:text-6xl tracking-tighter mb-16 font-bold">
+            download clear for windows
           </h2>
 
           <motion.div
@@ -23,45 +23,23 @@ const DownloadBeta = () => {
             viewport={{ once: true }}
             className="bg-white p-8 rounded-xl border-2 border-black shadow-lg mb-12"
           >
-            <h3 className="text-2xl font-bold mb-4">Early Access Version Available Now</h3>
+            <h3 className="text-2xl font-bold mb-4">Take back control—get started with Clear today</h3>
             <p className="text-lg mb-6">
-              Try the beta version that helps you stay focused by:
+              Block porn and distractions for good. Clear empowers your rational mind to set unbreakable boundaries, so you can focus on what matters most.
             </p>
 
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li className="text-lg">Blocking distracting desktop applications and websites</li>
-              <li className="text-lg">Scheduling focus periods where you can&apos;t unblock distractions</li>
-              <li className="text-lg">Disabling images across the web to reduce visual distractions</li>
-              <li className="text-lg">Allowing audio-only mode for videos (listen without watching)</li>
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-lg">
+              <li>Block 10,000,000+ adult sites automatically</li>
+              <li>Set restriction periods that can't be bypassed</li>
+              <li>Fine-tune your web and app access</li>
+              <li>Built for privacy—your data stays on your device</li>
             </ul>
 
             <div className="flex justify-center mt-8 gap-4">
-              <MagicButton title="Download Beta" icon={<FaDownload />} position="left" />
-
-              <a href="https://kickstarter.com" target="_blank" rel="noopener noreferrer">
-                <MagicButton title="Support the project" icon={<FaHeart />} position="left" />
-              </a>
+              <MagicButton title="Download for Windows" icon={<FaDownload />} position="left" />
             </div>
           </motion.div>
         </div>
-      </div>
-
-      <div className='w-full flex mt-20 md:flex-row flex-col justify-between items-center'>
-          <p className='md:text-base text-sm md:font-normal font-light'>Built with <b>Next.js</b> and <b>Tailwind CSS</b></p>
-
-          <div className='flex items-center md:gap-3 gap-6'>
-              {socialMedia.map((profile) => (
-                  <a key={profile.img} href={profile.link}>
-                      <div className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'>
-                          <img
-                              src={profile.img} 
-                              alt={String(profile.id)} 
-                              width={20} height={20}
-                          />
-                      </div>
-                  </a>
-              ))}
-          </div>
       </div>
     </section>
   )

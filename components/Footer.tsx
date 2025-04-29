@@ -1,52 +1,43 @@
-import React from 'react'
-import MagicButton from './ui/MagicButton'
-import { FaLocationArrow } from 'react-icons/fa6'
-import { socialMedia } from '@/data'
+import Link from "next/link"
 
-const Footer = () => {
+export default function Footer() {
+  const currentYear = new Date().getFullYear()
+  const supportEmail = "support@clearapp.io"
+
   return (
-    <footer className='w-full pt-20 pb-10 mb-[100px] md:mb-0' id='contact'>
-        <div className='w-full absolute left-0 -bottom-72 min-h-96'>
-            <img 
-                src='/footer-grid.svg'
-                alt='grid'
-                className='w-full h-full opacity-50'
-            />
-        </div>
-        
-        <div className='flex flex-col items-center'>
-            <h1 className='heading lg:max-w-[45vw]'>
-                Looking to get in touch?
-            </h1>
-            <p className='text-white-200 md:mt-10 my-5 text-center'>I&apos;m not currently looking for any new opportunities, but my inbox is always open!</p>
-            <a href='mailto:yunshen08@gmail.com'>
-                <MagicButton 
-                    title="Say Hello"
-                    icon={<FaLocationArrow />}
-                    position='right'
-                />
+    <footer className="bg-amber-50 border-t-2 border-black w-full py-8">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Company Info */}
+          <div className="space-y-3">
+            <h3 className="font-bold text-lg">Clear</h3>
+            <p className="text-sm text-gray-700">The app that helps you take back control and block distractions.</p>
+            <p className="text-sm text-gray-700">&copy; {currentYear} Clear App. All rights reserved.</p>
+          </div>
+
+          {/* Links */}
+          <div className="space-y-3">
+            <h3 className="font-bold text-lg">Legal</h3>
+            <nav className="flex flex-col space-y-2">
+              <Link href="/privacy-policy" className="text-sm hover:underline">
+                Privacy Policy
+              </Link>
+              <Link href="/terms-of-use" className="text-sm hover:underline">
+                Terms of Use
+              </Link>
+            </nav>
+          </div>
+
+          {/* Contact */}
+          <div className="space-y-3">
+            <h3 className="font-bold text-lg">Contact</h3>
+            <p className="text-sm text-gray-700">Questions or feedback? Email us at:</p>
+            <a href={`mailto:${supportEmail}`} className="text-sm font-medium hover:underline">
+              {supportEmail}
             </a>
-
-            <div className='w-full flex mt-16 md:flex-row flex-col justify-between items-center'>
-                <p className='md:text-base text-sm md:font-normal font-light'>Built with <b>Next.js</b> and <b>Tailwind CSS</b></p>
-
-                <div className='flex items-center md:gap-3 gap-6'>
-                    {socialMedia.map((profile) => (
-                        <a key={profile.img} href={profile.link}>
-                            <div className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'>
-                                <img
-                                    src={profile.img} 
-                                    alt={String(profile.id)} 
-                                    width={20} height={20}
-                                />
-                            </div>
-                        </a>
-                    ))}
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </footer>
   )
 }
-
-export default Footer

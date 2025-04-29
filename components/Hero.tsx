@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Clock, Focus, Brain } from "lucide-react"
 import { motion } from "framer-motion"
 import MagicButton from "./ui/MagicButton"
-import { FaLocationArrow } from "react-icons/fa6"
+import { FaDownload, FaLocationArrow } from "react-icons/fa6"
 
 export default function Hero() {
   return (
@@ -23,7 +23,7 @@ export default function Hero() {
             </div>
 
             <div className="flex justify-center md:justify-start">
-              <MagicButton title="Download for free" icon={<FaLocationArrow />} position="right" />
+              <MagicButton title="Download now" icon={<FaDownload />} position="right" />
             </div>
           </div>
 
@@ -42,7 +42,7 @@ export default function Hero() {
               {/* The image positioned on top of the highlights */}
               <div className="relative z-10 w-full shadow-xl">
                 <Image
-                  src="/image.png"
+                  src="/hero.png"
                   alt="Clear app blocking 10,000,000+ porn sites"
                   width={400}
                   height={800}
@@ -58,8 +58,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              <p className="text-sm font-bold">56%</p>
-              <p className="text-xs text-gray-600">Reduced anxiety</p>
+              <p className="text-sm font-bold">10M+</p>
+              <p className="text-xs text-gray-600">Sites blocked</p>
             </motion.div>
 
             <motion.div
@@ -68,8 +68,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
             >
-              <p className="text-sm font-bold">30+ days</p>
-              <p className="text-xs text-gray-600">Avg. streak</p>
+              <p className="text-sm font-bold">99.9%</p>
+              <p className="text-xs text-gray-600">Success rate</p>
             </motion.div>
           </div>
         </div>

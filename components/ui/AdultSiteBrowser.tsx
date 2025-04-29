@@ -1,5 +1,6 @@
 "use client"
 
+import "./scrollbar.css"
 import { useState } from "react"
 import { FaXmark, FaRegHeart, FaHeart, FaUser, FaLock, FaStar, FaPlay, FaEye } from "react-icons/fa6"
 import { FaSearch } from "react-icons/fa"
@@ -37,7 +38,7 @@ export default function AdultSiteBrowser() {
 
       {/* Navigation */}
       <div className="bg-gray-900 text-gray-300 flex overflow-x-auto text-sm border-b border-gray-700">
-        {["Trending", "New", "Top Rated", "Categories", "Live", "Premium", "Amateur", "Recommended"].map((item, i) => (
+        {["Trending", "New", "Top Rated", "Categories", "Live"].map((item, i) => (
           <div
             key={i}
             className={`px-4 py-2 whitespace-nowrap ${i === 0 ? "text-red-500 border-b-2 border-red-500" : "hover:text-white"}`}
@@ -61,7 +62,7 @@ export default function AdultSiteBrowser() {
       </div>
 
       {/* Content */}
-      <div className="bg-gray-900 text-white overflow-y-auto h-[370px]">
+      <div className="bg-gray-900 text-white overflow-y-auto h-[370px] clean-scrollbar">
         {/* Featured content */}
         <div className="p-3">
           <h3 className="text-lg font-bold mb-2">Trending Now</h3>
